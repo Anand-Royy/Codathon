@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab&display=swap');
+.detail-container {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.detail-container img {
+  margin: 3rem;
+  width: 350px;
+ }
+ 
+ .details {
+  padding-left: 3rem;
+ }
+
+.details h1 {
+  margin: 2rem 0;
+  font-family: 'Roboto Slab';
+}
+
+.details p {
+  margin: 2rem 0;
+  width: 70%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.details h2 {
+  margin: 2rem 0;
+  font-family: 'poppins';
+}
+
+.detail-rating {
+  margin: 1rem 0;
+}
+
+.checked{
+ color: orange;
+}
+
+.details button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: aqua;
+  margin-top: 1rem;
+  border: none;
+}

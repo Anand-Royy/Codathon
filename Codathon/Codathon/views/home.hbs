@@ -1,0 +1,64 @@
+<nav>
+      <div class="sidebar-logo">
+        <a href="#">
+          <i class="fas fa-bars fa-2x"></i>
+        </a>
+      </div>
+      <!-- search-bar -->
+      <div class="search">
+        <form action="#">
+          <input type="text" placeholder="     Search " name="search" />
+          <button>
+            <i class="fa fa-search" style="font-size: 18px"> </i>
+          </button>
+        </form>
+      </div>
+      <!-- search-bar -->
+      <div class="sidenav">
+        <h2>Menu</h2>
+        <div class="sidenav-links">
+          <a class="active" href="#about">All Phones</a>
+          <a href="1c272064a9a549aca3e18c84858236a1">Apple</a>
+          <a href="#about">Samsung</a>
+          <a href="#about">Realme</a>
+          <a href="#about">Oppo</a>
+          <a href="#about">Vivo</a>
+        </div>
+      </div>
+
+      <!-- <div class="nav-links">
+        <ul class="links">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About Us</a>
+          </li>
+        </ul>
+      </div> -->
+    </nav>
+    
+    <div class="container-items">
+        {{#each rows}}
+      <div class="mobile-item">
+        <img src="{{this.image_url}}" alt="" />
+        <!-- <div class="border-half"></div> -->
+        <a href="./info.html">
+          <h2 class="product-name">{{this.title}}</h2>
+        </a>
+
+        <h2 class="price">&#8377; {{this.price}}</h2>
+        <div class="rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div class="add-cart">
+          <h3>ADD TO CART</h3>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    
