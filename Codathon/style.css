@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links li a {
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+  display: inline;
+  margin: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* display: none; */
+  background-color: #212121;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  text-align: center;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 5px auto;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  width: 90%;
+}
+
+.sidenav a:hover {
+  /* color: blueviolet; */
+  background-color: #5fa2db;
+}
+
+.border-full {
+  border-bottom: 1px white solid;
+}
+
+.border-half {
+  border-bottom: 2px gray solid;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.sidenav a {
+  font-size: 20px;
+}
+.sidenav h2 {
+  background-color: #5fa2db;
+  color: beige;
+  padding: 10px 0;
+}
+
+.sidenav-links {
+  margin-top: 1rem;
+}
+
+.active {
+  border-radius: 5px;
+  background-color: #5fa2db;
+}
+
+.container-items {
+  width: 75%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+}
+
+.mobile-item {
+  text-align: center;
+  -webkit-box-shadow: 0px -1px 28px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 28px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 28px 0px rgba(0, 0, 0, 0.75);
+  margin: 2rem;
+  border-radius: 15px;
+  width: 300px;
+  background-color: white;
+}
+
+.mobile-item img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 1rem;
+}
+
+.mobile-item h2 {
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.mobile-item h2:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 1px;
+}
+
+.product-name {
+  font-family: 'Roboto Slab';
+}
+.mobile-item h3 {
+  margin: 1rem auto;
+}
+
+.checked {
+  color: orange;
+}
+.price {
+  color: black;
+}
+.mobile-item p{
+ margin: 0 2rem;
+ color: gray;
+}
+
+.add-cart {
+  margin-top: 1rem;
+  height: 3rem;
+  font-size: small;
+  background-color: #e63946;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-family: 'Poppins';
+}
